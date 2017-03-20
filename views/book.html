@@ -1,0 +1,23 @@
+
+    <div class="main-logo">quoteBook.</div>
+    <div class="filter"><input type="text"><input type="text"></div>
+    <div class="main-quotes">
+      <div class="quote" ng-repeat="q in bookQuotes">
+        {{quote.text}} <br>
+        {{quote.author}} <br>
+        <div class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+        <div class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+        <div class="delete-quote">x</div>
+        <div class="google"><i class="fa fa-google-plus" aria-hidden="true"></i></div>
+        <div class="tumblr"><i class="fa fa-tumblr" aria-hidden="true"></i></div>
+      </div>
+    </div>
+    <div class="add-quote">
+      <input type="text">
+      <button type="button" name="add">+</button>
+      <input type="text">
+    </div>
+    <div class="nav">
+      <div class="stream-icon"><a ui-sref="stream"><img src="./img/Scroll-01.png"></a></div>
+      <div class="book-icon"><a ui-sref="book"><img src="./img/book.png"></a></div>
+    </div>

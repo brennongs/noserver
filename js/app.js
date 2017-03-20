@@ -1,0 +1,24 @@
+angular.module('quoteBook',['ui.router']).config(function($urlRouterProvider,$stateProvider,$sceDelegateProvider){
+  $urlRouterProvider.otherwise('/')
+  $stateProvider.state('welcome',{
+    url:'/',
+    templateUrl:'../views/welcome.html',
+    controller:'enterCtrl'
+  }).state('create',{
+    url:'/create',
+    templateUrl:'../views/create.html',
+    controller:'enterCtrl'
+  }).state('enter',{
+    url:'/enter',
+    templateUrl:'../views/enter.html',
+    controller:'enterCtrl'
+  }).state('stream',{
+    url:'/stream',
+    templateUrl:'../views/stream.html',
+    controller:'quotesCtrl'
+  }).state('book',{
+    url:'/book',
+    templateUrl:'../views/book.html',
+    controller:'quotesCtrl'
+  })
+});

@@ -1,0 +1,9 @@
+angular.module('quoteBook').controller('enterCtrl',function($scope){
+  $scope.growDiv=()=>{
+    $('.container').css({'height':"75%",'width':'75%'});
+  }
+  $scope.growDivAgain=()=>{
+    $('.container').css({'height':'90%','width':'90%'})
+    $('.sub-container').css({'height':'90%','width':'90%'})
+  }
+})
